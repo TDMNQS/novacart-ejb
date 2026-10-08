@@ -1,0 +1,25 @@
+NovaCart 2 — Numan Qureshi — AWP CA3 — Batch 2, Group 1
+
+UPDATE KARNE KE STEPS
+1. Purana server terminal mein Ctrl+C press karke stop karo.
+2. Updated ZIP extract karo.
+3. Naye novacart folder ke files existing novacart folder mein copy karo.
+4. Existing files ke liye Replace select karo. Existing .runtime re-use hoga.
+5. Existing novacart folder ke PowerShell mein run karo:
+   powershell -ExecutionPolicy Bypass -File .\run.ps1
+6. Server ready hone par http://localhost:8080/novacart/ kholo.
+7. Ctrl+F5 press karo, taaki latest design load ho.
+
+FIRST RUN
+JDK 17 installed hona chahiye. Microsoft JDK 17 installed hai toh launcher
+automatically select karega. First setup mein internet required hai.
+
+NEW FEATURES
+12 products / 6 categories. Search. Category filters. Price/name sorting.
+Product quick view. Sticky header with live cart count. Separate cart.html
+page. Quantity +/- controls. Per-product subtotal. Cart recommendations.
+Refresh aur page navigation par Stateful EJB cart retained rehta hai.
+
+Complete source: src/. Built WAR: target/novacart.war.
+Report, screenshots, verification and viva: docs/.
+Detailed instructions: README.md.
