@@ -1,0 +1,9 @@
+.git
+.runtime
+.env
+.env.*
+target
+docs
+tests
+node_modules
+*.log
