@@ -1,0 +1,30 @@
+{
+  "framework": null,
+  "buildCommand": "",
+  "installCommand": "",
+  "outputDirectory": "vercel-public",
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/novacart/",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/novacart/:path*",
+      "destination": "https://novacart-ejb.onrender.com/novacart/:path*"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/novacart/api/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "private, no-store, max-age=0"
+        }
+      ]
+    }
+  ]
+}
